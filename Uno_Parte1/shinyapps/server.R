@@ -13,6 +13,7 @@ library(readr)
 library(DT)
 library(RMySQL)
 library(lubridate)
+library(ggplot2)
 
 drv = dbDriver("MySQL")
 db = dbConnect(drv,user='root',password = 'root123',host = 'uno_parte1_db_1',dbname = 'Parcial1')
