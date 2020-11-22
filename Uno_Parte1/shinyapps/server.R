@@ -231,7 +231,7 @@ shinyServer(function(input, output) {
         validate(need(((length(x$length_title)>0)&(length(x$viewCount)>0)),'¡El número total de videos con estos filtros es 0!'))  
         
         ggplot(x, aes(x = as.factor(length_title), y = viewCount)) + geom_boxplot() +
-            ggtitle("Longitud del título vs. Total de vistas") + xlab('Longitud de la descripción') + ylab('Total de vistas')
+            ggtitle("Longitud del título vs. Total de vistas") + xlab('Longitud del título') + ylab('Total de vistas')
     })
     
     output$DT_table_viewTop <- renderDT({
