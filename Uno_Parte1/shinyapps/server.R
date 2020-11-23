@@ -38,6 +38,8 @@ df$comment_ratio <- df$commentCount/df$viewCount
 df$dislike_ratio <- df$dislikeCount/df$viewCount
 df$length_description <- sapply(df$description,nchar)
 
+df = df %>% unique()
+
 cols <- names(df)
 
 for(i in seq_along(cols)){
